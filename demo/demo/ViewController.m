@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <CIImageManager/CIImageManager.h>
+#import <CIImageManager/CIImageManagerHeader.h>
 
 @interface ViewController ()
 

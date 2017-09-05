@@ -15,7 +15,7 @@
 		7D4F22CA1F4EBA230037362F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4F22C81F4EBA230037362F /* LaunchScreen.storyboard */; };
 		7D4F22DA1F4ECB280037362F /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D4F22D91F4ECB280037362F /* people.png */; };
 		7D4F22DC1F4ECB2F0037362F /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D4F22DB1F4ECB2F0037362F /* image.png */; };
-		7D4F22F61F4ECF900037362F /* CIImageManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D4F22F51F4ECF900037362F /* CIImageManager.framework */; };
+		7DAFF2B81F5E8EDA000855C6 /* CIImageManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DAFF2B71F5E8EDA000855C6 /* CIImageManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 		7D4F22CB1F4EBA230037362F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D4F22D91F4ECB280037362F /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		7D4F22DB1F4ECB2F0037362F /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		7D4F22F51F4ECF900037362F /* CIImageManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CIImageManager.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CIImageManager-himfvbibhrgfokcglzvngxdacndp/Build/Products/Debug-iphonesimulator/CIImageManager.framework"; sourceTree = "<group>"; };
+		7DAFF2B71F5E8EDA000855C6 /* CIImageManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CIImageManager.framework; path = "../CIImageManager/build/Debug-iphoneos/CIImageManager.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4F22F61F4ECF900037362F /* CIImageManager.framework in Frameworks */,
+				7DAFF2B81F5E8EDA000855C6 /* CIImageManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 		7D4F22DD1F4ECB740037362F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D4F22F51F4ECF900037362F /* CIImageManager.framework */,
+				7DAFF2B71F5E8EDA000855C6 /* CIImageManager.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CTPHKMWQ9;
 				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,6 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6CTPHKMWQ9;
 				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,19 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D4F22A81F4EBA080037362F /* CIImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4F22A61F4EBA080037362F /* CIImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D4F22D31F4EBA790037362F /* UIImage+Tint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4F22D11F4EBA790037362F /* UIImage+Tint.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7D4F22D41F4EBA790037362F /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4F22D21F4EBA790037362F /* UIImage+Tint.m */; };
+		7D4F22A81F4EBA080037362F /* CIImageManagerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4F22A61F4EBA080037362F /* CIImageManagerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D4F22D71F4EBD900037362F /* CIImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4F22D51F4EBD900037362F /* CIImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D4F22D81F4EBD900037362F /* CIImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4F22D61F4EBD900037362F /* CIImageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D4F22A31F4EBA080037362F /* CIImageManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CIImageManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D4F22A61F4EBA080037362F /* CIImageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIImageManager.h; sourceTree = "<group>"; };
+		7D4F22A61F4EBA080037362F /* CIImageManagerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIImageManagerHeader.h; sourceTree = "<group>"; };
 		7D4F22A71F4EBA080037362F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D4F22D11F4EBA790037362F /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
-		7D4F22D21F4EBA790037362F /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 		7D4F22D51F4EBD900037362F /* CIImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIImageManager.h; sourceTree = "<group>"; };
 		7D4F22D61F4EBD900037362F /* CIImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIImageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,8 +36,6 @@
 			children = (
 				7D4F22D51F4EBD900037362F /* CIImageManager.h */,
 				7D4F22D61F4EBD900037362F /* CIImageManager.m */,
-				7D4F22D11F4EBA790037362F /* UIImage+Tint.h */,
-				7D4F22D21F4EBA790037362F /* UIImage+Tint.m */,
 				7D4F22A51F4EBA080037362F /* CIImageManager */,
 				7D4F22A41F4EBA080037362F /* Products */,
 			);
@@ -58,7 +52,7 @@
 		7D4F22A51F4EBA080037362F /* CIImageManager */ = {
 			isa = PBXGroup;
 			children = (
-				7D4F22A61F4EBA080037362F /* CIImageManager.h */,
+				7D4F22A61F4EBA080037362F /* CIImageManagerHeader.h */,
 				7D4F22A71F4EBA080037362F /* Info.plist */,
 			);
 			path = CIImageManager;
@@ -71,8 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4F22A81F4EBA080037362F /* CIImageManager.h in Headers */,
-				7D4F22D31F4EBA790037362F /* UIImage+Tint.h in Headers */,
+				7D4F22A81F4EBA080037362F /* CIImageManagerHeader.h in Headers */,
 				7D4F22D71F4EBD900037362F /* CIImageManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4F22D41F4EBA790037362F /* UIImage+Tint.m in Sources */,
 				7D4F22D81F4EBD900037362F /* CIImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +255,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CIImageManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.CIImageManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -281,7 +275,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = CIImageManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cwb.huanhuan.CIImageManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
